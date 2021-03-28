@@ -3,6 +3,7 @@ notesTile();
 tabsTile();
 closeQuick();
 
+//toggling of Quick Copy button 
 
 function closeQuick(){
   let hidden = document.getElementById('hidden');
@@ -61,6 +62,8 @@ hiddentoggle.addEventListener("click", function () {
   }
 })
 
+// adding the notes
+
 let addBtn = document.getElementById('addBtn');
 addBtn.addEventListener("click", function (e) {
   let addTxt = document.getElementById("addTxt");
@@ -110,6 +113,7 @@ function notesTile() {
 
 }
 
+// displaying the notes
 
 function tabsTile() {
   let tabs = localStorage.getItem("tabs")
@@ -139,6 +143,8 @@ function tabsTile() {
 
 }
 
+// removing all notes
+
 let removeBtn = document.getElementById('removeBtn');
 removeBtn.addEventListener("click", function () {
   console.log('The note is being deleted');
@@ -155,6 +161,8 @@ removeBtn.addEventListener("click", function () {
 })
 
 
+// removing all tabs
+
 let removeTab = document.getElementById('removeTab');
 removeTab.addEventListener("click", function () {
   console.log("Clearing tabs");
@@ -170,6 +178,9 @@ removeTab.addEventListener("click", function () {
   document.getElementById("opentab").innerHTML = "";
   tabsTile();
 })
+
+
+// the search button
 
 let search = document.getElementById('searchText');
 search.addEventListener("input", function () {
@@ -190,6 +201,8 @@ search.addEventListener("input", function () {
 
 
 })
+
+//listing and closing tabs
 
 
 let onetab = document.getElementById('onetab');
@@ -255,7 +268,7 @@ localStorage.setItem("other", copyText.value);
 })
 
 
-
+// conversion of uri to blob
 
 function dataURItoBlob(dataURI) {
   var byteString = atob(dataURI.split(',')[1]);
@@ -267,6 +280,7 @@ function dataURItoBlob(dataURI) {
   return new Blob([ab], { type: 'image/png' });
 }
 
+// screenshot of the tab
 
 let captureTab = document.getElementById('captureTab');
 captureTab.addEventListener("click",
