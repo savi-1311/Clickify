@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-WOdSzz11/3cpqOdrm89LBL2UPwEU9EhbDtMy2OciEhs='">
+	<title>Notes</title>
+	<link rel="stylesheet" href="bootstrap.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css" crossorigin="anonymous">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" id="title">Clickify</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<img src="top.png" width="400px">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<button class="btn btn-outline-light my-2 my-sm-0" id="onetab" data-toggle="tooltip" data-placement="top" title="Close all tabs and add to the list">One Tab</button> 
+				<button class="btn btn-outline-light my-2 my-sm-0" id="removeTab">Clear List</button>
+				<button class="btn btn-outline-light my-2 my-sm-0" id="captureTab" data-toggle="tooltip" data-placement="top" title="Copy screenshot to clipboard">Screen Capture</button>
+				<!-- <button class="btn btn-outline-light my-2 my-sm-0" id="closetab" data-toggle="tooltip" data-placement="top" title="Copy screenshot to clipboard">Close</button> -->
+				<ul class="navbar-nav mr-auto" id="opentab">
+				</ul>
+			</li>
+
+		</ul>
+		<form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" id="searchText" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search Notes</button>
+		</form>
+	</div>
+</nav>
+
+<div class="container my-3">
+	<div class="card bg-dark text-white">
+		<div class="card-body">
+			<h5 class="card-title"><b>Add a Note</b></h5>
+			<div class="form-group">
+				<textarea class="form-control" id="addTxt" rows="3"></textarea><br>
+				<img src="clip.png">      <input type="text" class="form-control" id="addLink"></input>
+			</div>
+
+			<a class="btn btn-primary" id="addBtn">Done</a>
+			<a class="btn btn-danger" id="removeBtn">Clear All</a>
+		</div>
+	</div>
+	<br>
+	<hr>
+	<div id="notes" class="row container-fluid">
+	</div>
+</div>
+<div class="footer">
+	<button class="btn btn-outline-light my-2 my-sm-0" id="hiddentoggle">Quick Copy</button>
+
+	<div id="hidden">
+		<form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="text" id="qname" placeholder="Name" aria-label="Search">
+			<button class="btn btn-outline-light my-2 my-sm-0" id="qnamec">Copy</button>
+			<input class="form-control mr-sm-2" type="email" id="qemail" placeholder="Email" aria-label="Search">
+			<button class="btn btn-outline-light my-2 my-sm-0" id="qemailc" type="submit">Copy</button>
+			<input class="form-control mr-sm-2" type="text" id="qother" placeholder="Other" aria-label="Search">
+			<button class="btn btn-outline-light my-2 my-sm-0" type="submit" id="qotherc">Copy</button>
+		</form>
+	</div>
+		<p><img src="spotify.jpeg" width="60%"></p>
+		Made with ❤️️ by <a href="https://github.com/savi-1311">Shambhavi Shandilya</a>
+</div>
+
+<script src="jquery.js"
+crossorigin="anonymous"></script>
+<script src="popper.js"
+crossorigin="anonymous"></script>
+<script src="bootstrap.js"
+crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
