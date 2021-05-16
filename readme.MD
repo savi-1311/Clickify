@@ -1,3 +1,7 @@
+# Clickify
+
+https://user-images.githubusercontent.com/56017960/118387794-17e45680-b63e-11eb-90c1-41f47b232f8e.mp4
+
 ## Inspiration
 * We all might have downloaded the Todo/Notes App on our phone, used it for a few days, then left it idle. I have done the same plenty of times. I realized the primary reason for it not being effective is that we are not reminded of its presence constantly.
 Be it a student or a working being, we spend most of our time on a web browser, writing emails and assignments. Therefore, I decided to build this application as a web-extension. If the application stays right in front of your eyes most of the time, you are likely to use it.
@@ -14,15 +18,30 @@ You can activate the extension on your google meet as the meeting starts and lat
 
 Clickify is a Chrome Extension built to make your life more structured and easy-
 
-🗒**Take Notes:** We spend most of our time on the web browser. So, it's a great idea to keep all your notes in the browser itself. You can also add links with the notes created.  
+🗒**Take Notes:** We spend most of our time on the web browser. So, it's a great idea to keep all your notes in the browser itself. You can also add links with the notes created.
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/56017960/118387721-aad0c100-b63d-11eb-8552-854c089d899d.gif)
+
 
 💻**Group Tabs:** Save up to 95% of memory. Click the OneTab to convert all of your tabs into a list. It closes all the non-active tabs. When you need to reaccess the tabs, you can restore them individually from the extension.
 
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/56017960/118387739-be7c2780-b63d-11eb-948c-0c1d3a81ce81.gif)
+
+
 📹**Meeting made easy:** Get the complete transcript of your Google Meet meetings with a single click.
+
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/56017960/118387743-c8058f80-b63d-11eb-931e-12a5fcf249eb.gif)
+
 
 📷**Take Screenshot:** Avoid the hassle of opening a new application to snap the screen. One extension to do it all!
 
+![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/56017960/118387753-d489e800-b63d-11eb-804c-4fd3ccc6064a.gif)
+
+
 📎**Fill Forms:** Keep all the repetitive stuff, such as your full name, email, address, etc., in one place. So from next time, all you need to is Ctrl+C and Ctrl+V.
+
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/56017960/118387763-e075aa00-b63d-11eb-8eb0-2a64101cbaca.gif)
+
 
 🎶**Groove to Music:** A Spotify scan code to keep you entertained. (Just wanted to make this extension less boring)
 
@@ -31,7 +50,8 @@ I have used HTML, CSS, and Javascript to build this extension.
 
 ## Challenges we ran into
 Though the extension seems easy to use, it wasn't easy to build this using pure Javascript.
-**onclick() -> According to the security policy, we cannot use onclick() function in chrome extensions. This took away a lot of time debugging and finally changing the code.
+
+* onclick() -> According to the security policy, we cannot use onclick() function in chrome extensions. This took away a lot of time debugging and finally changing the code.
 
 * Accessing the tabs -> There are not a lot of articles explaining how to use tabs.Tab. It was a hard time figuring out the documentation and implementing it.
 
